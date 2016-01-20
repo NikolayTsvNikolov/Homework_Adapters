@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Random text"
+        android:textColor="#f000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_margin="8dp"
+        android:text="**** Points" />
+
+    <TextView
+        android:id="@+id/txt_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/txt_points"
+        android:text="**** Comments" />
+
+    <Button
+
+        android:id="@+id/btn_points_up"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/txt_points"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/arrows_up_grey"
+        android:clickable="true"
+        android:elevation="100dp" />
+
+    <Button
+        android:id="@+id/btn_points_down"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/txt_points"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/btn_points_up"
+        android:background="@drawable/arrows_down_grey"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btn_comment"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/txt_points"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/btn_points_down"
+        android:background="@drawable/ic_textsms_black_24dp"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_points"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:clickable="true"
+        android:text="SHARE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

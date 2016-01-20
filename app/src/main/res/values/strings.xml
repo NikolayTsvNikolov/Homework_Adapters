@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+    <string name="title_activity_add_comments">AddComments</string>
+    <string name="title_activity_add_commetns">AddCommetnsActivity</string>
+    <string name="title_activity_add_comment">AddComment</string>
+</resources>
